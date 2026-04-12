@@ -2191,3 +2191,137 @@ input, select, textarea {
 			}
 
 		}
+
+
+/* ========================================
+   Events section
+   ======================================== */
+
+        #events .events-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+            margin-top: 1.5rem;
+            max-width: 100%;
+        }
+        
+        #events .event-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.1rem;
+            background: rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-left: 3px solid rgba(0, 0, 0, 0.25);
+            padding: 1.25rem 1.25rem 1.1rem;
+            border-radius: 4px;
+            transition: background 0.2s ease, border-color 0.2s ease;
+	    margin-bottom: 0.4rem;
+        }
+
+	#events .event-card:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* 
+	#events .event-card:hover {
+            background: rgba(0, 0, 0, 0.06);
+            border-color: rgba(0, 0, 0, 0.18);
+            border-left-color: rgba(0, 0, 0, 0.4);
+        }
+	*/
+        
+        #events .event-date {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 2.8rem;
+            line-height: 1;
+            gap: 0.1rem;
+            flex-shrink: 0;
+        }
+        
+        #events .event-date .month {
+            font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.45);
+        }
+        
+        #events .event-date .day {
+            font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-size: 2rem;
+            font-weight: 300;
+            color: #222;
+            line-height: 1;
+        }
+        
+        #events .event-date .year {
+            font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-size: 0.6rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            color: rgba(0, 0, 0, 0.35);
+        }
+        
+        #events .event-date .time {
+            font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-size: 0.6rem;
+            letter-spacing: 0.08em;
+            color: rgba(0, 0, 0, 0.35);
+            margin-top: 0.25rem;
+            white-space: nowrap;
+        }
+        
+        #events .event-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 0;
+        }
+        
+        #events .event-info h3 {
+            font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin: 0 0 0.35rem;
+            color: #222;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        
+        #events .event-location {
+            font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-size: 1.0rem;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.65);
+            letter-spacing: 0.04em;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.3em;
+        }
+        
+        #events .event-location .icon {
+            opacity: 0.5;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+        
+        #events .event-location a {
+            color: #777777;
+            text-decoration: none;
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+        
+        #events .event-location a:hover {
+            color: rgba(0, 0, 0, 0.8);
+        }
